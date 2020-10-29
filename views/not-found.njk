@@ -1,0 +1,14 @@
+{% extends "layout.njk" %}
+
+
+{% block style %}
+    <link rel="stylesheet" href="/404.css">
+{% endblock %}
+
+{% block section %}
+<div id="container-error">
+    <img src="/assets/404error.svg" alt="Página não encontrada">
+    <h1>Opss! Não foi aqui que dexei meu foguete!</h1>
+    <h2>Vamos tentar outro lugar?</h2>
+</div>
+{% endblock %}

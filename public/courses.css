@@ -1,0 +1,142 @@
+/* === MAIN CARDS === */
+#cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin: 6vh auto;
+    max-width: 1200px;
+    
+}
+.card {
+    text-align: center;
+    padding: 75px 20px;
+    background-color: var(--color-card);
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid var(--color-card);
+    transition: border-color 0.3s;
+}
+#starter.card:hover {
+    border: 2px solid var(--span-starter);
+}
+#launchbase.card:hover {
+    border: 2px solid var(--span-launch);
+}
+#gostack.card:hover {
+    border: 2px solid var(--span-stack);
+}
+.card_content {
+    max-width: 280px;
+    padding: 32px;
+}
+.card_content p {     
+    text-align: center;
+    color: var(--color-grey);
+    font-size: 16px;
+    line-height: 26px;   
+}
+.starter-p {
+    color: var(--span-starter);
+    font-weight: 700;
+}
+.launch-p {
+    color: var(--span-launch);
+    font-weight: 700;
+}
+.stack-p {
+    color: var(--span-stack);
+    font-weight: 700;
+}
+.card_info {
+    margin: 20px 0;
+    
+}
+.card_price_starter {
+    padding: 15px;
+    background-color: var(--span-starter);
+    border-radius: 5px;
+    margin: 32px 42px;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--color-black);
+}
+.card_price_launch {
+    padding: 15px;
+    background-color: var(--span-launch);
+    border-radius: 5px;
+    margin: 32px 42px;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--color-black);
+}
+.card_price_stack {
+    padding: 15px;
+    background-color: var(--span-stack);
+    border-radius: 5px;
+    margin: 32px 42px;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--color-black);
+}
+
+/*=== MODAL ===*/
+
+.iframe {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.iframe-modal {
+    background-color: var(--color-black);
+    width: 60%;
+    height: 80%;
+    margin: 5vh auto;
+    position: relative;
+}
+.iframe-modal.iframe-modal-max {
+    background-color: var(--color-black);
+    width: 100%;
+    height: 96.5%;
+    margin: 0vh auto;
+    position: relative;
+}
+.close-iframe {
+    color: var(--color-lavander);
+    position: absolute;
+    right: 8px;
+    top: 5px;
+    cursor: pointer;
+}
+.max-iframe {
+    color: var(--color-lavander);
+    position: absolute;
+    right: 30px;
+    top: 5px;
+    cursor: pointer;
+}
+.max-iframe.max {
+    opacity: 0;
+    visibility: hidden;
+}
+.close-iframe:hover,
+.max-iframe:hover{
+    color: var(--color-green);
+    transition: color 300ms;
+}
+
+/*=== Modal ativo === */
+.iframe.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 4%;
+}

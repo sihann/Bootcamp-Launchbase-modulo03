@@ -1,0 +1,66 @@
+{% extends "layout.njk" %}
+
+{% block style %}
+    <link rel="stylesheet" href="/courses.css">
+    
+{% endblock %}
+
+{% block section %}
+    <section id="cards">
+            
+        <div class="card" id="starter">
+            <div class="card_img">
+                <img src="/assets/starter.svg" alt="">
+            </div>
+            <div class="card_content">
+                <p><span class="starter-p">Torne-se um programador desejado</span> no mercado com esses cursos gratuitos</p>
+            </div>
+            <div class="card_info">
+                <p>03 módulos</p>
+                <p class="card_price_starter">Free</p>
+            </div>
+        </div>
+
+        <div class="card" id="launchbase">
+            <div class="card_img">
+                <img src="/assets/launchbase.svg" alt="">
+            </div>
+            <div class="card_content">
+                <p><span class="launch-p">Domine programação do zero</span> e tenha acesso às melhores oportunidades do mercado</p>
+            </div>
+            <div class="card_info">
+                <p>05 módulos</p>
+                <p class="card_price_launch">Pago</p>
+            </div>
+        </div>
+        
+        <div class="card" id="gostack">
+            <div class="card_img">
+                <img src="/assets/gostack.svg" alt="">
+            </div>
+            <div class="card_content">
+                <p><span class="stack-p">Treinamento imersivo</span> nas tecnologias mais modernas de desenvolvimento web e mobile</p>
+            </div>
+            <div class="card_info">
+                <p>08 módulos</p>
+                <p class="card_price_stack">Pago</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="iframe">
+        <div class="iframe-modal">
+            <a class="max-iframe">
+                <i class="far fa-square"></i>
+            </a>
+            <a class="close-iframe">
+                <i class="fas fa-times"></i>
+            </a>
+            <div class="iframe-content">
+            <iframe src="" frameborder="0"></iframe>
+            </div>
+
+        </div>
+    </div>
+    <script src="/modal.js"></script>
+{% endblock %}

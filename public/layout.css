@@ -32,8 +32,9 @@ header {
     font-weight: 500;
 }
 #menu {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .logo {
     text-align: right;

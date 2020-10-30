@@ -7,45 +7,22 @@
 
 {% block section %}
     <section id="cards">
-            
-        <div class="card" id="starter">
-            <div class="card_img">
-                <img src="/assets/starter.svg" alt="">
-            </div>
-            <div class="card_content">
-                <p><span class="starter-p">Torne-se um programador desejado</span> no mercado com esses cursos gratuitos</p>
-            </div>
-            <div class="card_info">
-                <p>03 módulos</p>
-                <p class="card_price_starter">Free</p>
-            </div>
-        </div>
 
-        <div class="card" id="launchbase">
-            <div class="card_img">
-                <img src="/assets/launchbase.svg" alt="">
+        {% for item in items %}    
+            <div class="card" id="{{item.id}}">
+                <div class="card_img">
+                    <img src="/assets/{{item.img}}" alt="">
+                </div>
+                <div class="card_content">
+                    <p><span class="{{item.classHeadline}}">{{item.headline}}</span> {{item.description}}</p>
+                </div>
+                <div class="card_info">
+                    <p>{{item.modules}}</p>
+                    <p class="{{item.classPrice}}">{{item.price}}</p>
+                </div>
             </div>
-            <div class="card_content">
-                <p><span class="launch-p">Domine programação do zero</span> e tenha acesso às melhores oportunidades do mercado</p>
-            </div>
-            <div class="card_info">
-                <p>05 módulos</p>
-                <p class="card_price_launch">Pago</p>
-            </div>
-        </div>
-        
-        <div class="card" id="gostack">
-            <div class="card_img">
-                <img src="/assets/gostack.svg" alt="">
-            </div>
-            <div class="card_content">
-                <p><span class="stack-p">Treinamento imersivo</span> nas tecnologias mais modernas de desenvolvimento web e mobile</p>
-            </div>
-            <div class="card_info">
-                <p>08 módulos</p>
-                <p class="card_price_stack">Pago</p>
-            </div>
-        </div>
+        {% endfor %}
+
     </section>
 
     <div class="iframe">

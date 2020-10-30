@@ -8,6 +8,7 @@
     
 }
 .card {
+    display: grid;
     text-align: center;
     padding: 75px 20px;
     background-color: var(--color-card);

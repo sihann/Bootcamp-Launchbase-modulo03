@@ -12,7 +12,7 @@
 
 - Criar um servidor que tenha duas rotas que devem retornar o conteúdo dos html gerados no desafio 2-3 (páginas de Cursos e Sobre). Além disso, deve ser implementando um arquivo padrão (layout.njk) que reaproveite o código em comum entre esses dois e também um arquivo que sirva uma página de erro 404.
 
-##  :rocket: Desafio 3-2
+##  :rocket: Desafio 3-2 :heavy_check_mark:
 
 - Atualizar os arquivos com informações de cursos e descrição de forma dinâmica.
 

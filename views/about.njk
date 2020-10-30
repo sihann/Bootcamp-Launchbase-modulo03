@@ -7,17 +7,16 @@
 
 {% block section %}
     <div id="main">
-        <img src="/assets/logo.jpg" alt="">
-        <h1>Rocketseat</h1>
-        <h2>As melhores tecnologias em programação, direto ao ponto e do jeito certo.</h2>
-        <p>No meio de tanta informação e da quantidade de ferramentas que surgem todos os dias, você precisa de alguém que te leve na direção certa.</p>
+        <img src="/assets/{{about.avatar}}" alt="Imagem de {{about.title}}">
+        <h1>{{about.title}}</h1>
+        <h2>{{about.headline}}</h2>
+        <p>{{about.description}}</p>
     </div>
     <div id="tech">
         <ul>
-            <li><img src="/assets/javascript.svg" alt=""><p>JavaScript</p></li>
-            <li><img src="/assets/nodejs.svg" alt=""><p>NodeJS</p></li>
-            <li><img src="/assets/reactjs.svg" alt=""><p>ReactJS</p></li>
-            <li><img src="/assets/react-native.svg" alt=""><p>React Native</p></li>
+            {% for tech in about.technologies %}
+            <li><img src="/assets/{{tech.img}}" alt="{{tech.name}}"><p>{{tech.name}}</p></li>
+            {% endfor %}
         </ul>
     </div>
 {% endblock %}   

@@ -17,10 +17,9 @@
 - Atualizar os arquivos com informações de cursos e descrição de forma dinâmica.
 
 
-##  :rocket: Desafio 3-3
+##  :rocket: Desafio 3-3 :heavy_check_mark:
 
 - Criar uma página de descrição do curso que deve ser chamada no lugar da modal quando o usuário clicar no card do curso.
 
 
-## :memo: Licença
 

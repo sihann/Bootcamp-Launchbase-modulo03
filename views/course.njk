@@ -1,0 +1,22 @@
+{% extends "layout.njk" %}
+
+
+{% block head %}
+    <title>Rocketseat - {{course.id}} </title>
+    <link rel="stylesheet" href="/course.css">
+{% endblock %}
+
+{% block section %}
+    <div id="main">
+        <div class="course">
+            <h1 class="{{course.classHeadline}}">{{course.headline}}</h1>
+            <h2>{{course.description}}</h2>
+            <h3>Treinamento online com {{course.modules}} com foco em</h3>
+            <span>{{course.tech}}</span>
+            <h4>{{course.notes}}</h4>
+        </div>
+        <div class="img-course">
+            <img src="/assets/{{course.img}}" alt="Imagem do curso {{course.id}}">
+        </div>
+    </div>
+{% endblock %}  

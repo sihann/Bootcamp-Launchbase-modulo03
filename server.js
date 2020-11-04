@@ -17,7 +17,16 @@ nunjucks.configure("views", {
 
 /* --- Rotas ---*/
 server.get("/", function(req, res) {
-    return res.render("courses", {items: courses})
+    return res.render("courses", {items: courses}) //chave items
+})
+
+server.get("/courses/:id", function(req, res){
+    const id = req.params.id;
+    const course = courses.find(function(course) {
+        if(course.id==id) {return true}
+    })
+        return res.render("course", { course }) //chave course
+    
 })
 
 server.get("/about", function(req, res) {
@@ -33,7 +42,7 @@ server.get("/about", function(req, res) {
             { name: "React Native", img: "react-native.svg" }
         ]
     }
-    return res.render("about", { about })
+    return res.render("about", { about }) //chave about
 })
 
 server.use(function(req, res) {

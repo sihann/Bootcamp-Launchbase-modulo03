@@ -22,4 +22,7 @@
 - Criar uma página de descrição do curso que deve ser chamada no lugar da modal quando o usuário clicar no card do curso.
 
 
+##  :computer: Screenshots 
+
+<p align="center"><img src="screenshots/screen1.png" alt="Screenshots Desafio 3" width="50%"> <img src="screenshots/screen2.png" alt="Screenshots Desafio 3" width="50%"> <img src="screenshots/screen3.png" alt="Screenshots Desafio 3" width="50%"></p>
 

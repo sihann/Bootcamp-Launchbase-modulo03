@@ -1,8 +1,7 @@
 #main {
     text-align: center;
-    padding: 32px 0 15px;
     max-width: 800px;
-    margin: auto;
+    margin: 12vh auto 4vh;
 }
 #main img {
     max-width: 220px;
